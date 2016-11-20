@@ -4,9 +4,10 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import static lk.ac.mrt.cse.dbs.simpleexpensemanager.Constants.DATABASE_NAME;
+import static lk.ac.mrt.cse.dbs.simpleexpensemanager.Constants.DATABASE_VERSION;
+
 public class ExpenseOpenHelper extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "140004E";
-    private static final int DATABASE_VERSION = 1;
     private static final String ACCOUNT_TABLE_NAME = "account";
     private static final String ACCOUNT_TABLE_CREATE = "CREATE TABLE IF NOT EXISTS " + ACCOUNT_TABLE_NAME +
             "(" +
